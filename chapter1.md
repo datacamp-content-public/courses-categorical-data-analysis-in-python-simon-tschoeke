@@ -40,3 +40,16 @@ This is an example exercise.
 ```{python}
 
 ```
+
+---
+
+## Correlation
+
+```yaml
+type: VideoExercise
+key: b55282f76f
+xp: 50
+```
+
+`@projector_key`
+f0d972138e8911bea6c58ca8a219ecae
