@@ -17,7 +17,7 @@ title: Data Scientist
 
 
 `@script`
-
+In previous sessions we have learned what a contingency table is and how to use it for measuring agreement.
 
 
 ---
