@@ -49,7 +49,10 @@ key: "590e98b9ad"
 ```
 
 `@part1`
-
+```python
+import pandas as pd
+import numpy as np
+```
 
 
 `@script`
