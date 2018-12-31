@@ -17,31 +17,27 @@ title: Data Scientist
 
 
 `@script`
-In previous sessions we have learned what a contingency table is and how to use it for measuring agreement. In this lesson we are going to explore ways to measure if categorical variables
+In previous sessions we have learned what a contingency table is and how to use it for measuring agreement. In this lesson we are going to explore ways to measure if categorical variables are correlated, that is associated in any way.
 
 
 ---
-## Insert title here...
+## Binary Variables
 
 ```yaml
-type: "TwoColumns"
-key: "d2d9e53b80"
+type: "FullSlide"
+key: "86af209bed"
 ```
 
 `@part1`
 
 
 
-`@part2`
-
-
-
 `@script`
-
+Let's first consider binary variables. Binary variables can take only one of two possible values. For example a person can have a certain disease or not. Here we are interested in analyzing whether two binary variables are associated to each other in any way.
 
 
 ---
-## Insert title here...
+## Phi Coefficient
 
 ```yaml
 type: "FullCodeSlide"
@@ -56,7 +52,7 @@ import numpy as np
 
 
 `@script`
-
+One common measure in this context is the **Phi** statistic.
 
 
 ---
