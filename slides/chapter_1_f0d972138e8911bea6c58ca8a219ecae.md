@@ -84,6 +84,26 @@ The code example implements Phi as a function, that takes a 3x3 pandas dataframe
 
 
 ---
+## Insert title here...
+
+```yaml
+type: "TwoRows"
+key: "871d4a10ff"
+```
+
+`@part1`
+Phi Coefficient - example
+
+
+`@part2`
+
+
+
+`@script`
+
+
+
+---
 ## Leaving Correlation
 
 ```yaml
