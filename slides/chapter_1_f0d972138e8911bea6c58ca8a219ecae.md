@@ -51,6 +51,24 @@ Phi can be calculated by either using a 2x2 contingency table or by using the Ch
 
 
 ---
+## Phi Coefficient - example
+
+```yaml
+type: "FullCodeSlide"
+key: "fdc77ddd5d"
+```
+
+`@part1`
+```python
+
+```
+
+
+`@script`
+
+
+
+---
 ## Final Slide
 
 ```yaml
