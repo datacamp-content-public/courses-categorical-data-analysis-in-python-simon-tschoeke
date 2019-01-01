@@ -54,25 +54,31 @@ Phi can be calculated by either using a 2x2 contingency table or by using the Ch
 ## Phi Coefficient - example
 
 ```yaml
-type: "FullCodeSlide"
-key: "fdc77ddd5d"
+type: "TwoRows"
+key: "cd989b611a"
 ```
 
 `@part1`
 ```python
+def phi(ct):
+    assert ct.shape == (3,3)
+    import math
+    a, b, c, d = [ct.iloc[(i,j)] for i in range(2) for j in range(2)]
+    NAn, NAp = [ct.iloc[(i, 2)] for i in range(2)]
+    NBn, NBp = [ct.iloc[(2, i)] for i in range(2)]
+    return (a*d - b*c) / math.sqrt(NAn*NAp*NBn*NBp)
+```
+
+
+`@part2`
+```python
 import pandas as pd
 
-# read data
+data = pd.read_csv('data.csv', sep=';')
 
 tab = pd.crosstab(data.y, data.yhat, margins=True)
 
-def phi(ct):
-    a, b, c, d = [ct.iloc[(i,j)] for i in range(2) for j in range(2)]
-    NAn = a + b
-    NAp = c + d
-    NBn = a + c
-    NBp = b + d
-    return (a*d - b*c) / math.sqrt(NAn*NAp*NBn*NBp)
+phi(tab)
 ```
 
 
