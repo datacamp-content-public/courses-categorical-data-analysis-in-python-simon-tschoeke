@@ -78,7 +78,9 @@ def phi(ct: pd.DataFrame) -> float:
 
 
 `@script`
-Now, the formula for calculating Phi by directly
+Now, the formula for calculating Phi using a 2x2 contingency table is show here. It sets the difference of the values found on the diagonals in the table into relation with the marginals.
+
+The code example implements Phi as a function, that takes a 3x3 pandas dataframe representing containing the 2x2 contingency table as well as one additional row and column for the marginals.
 
 
 ---
