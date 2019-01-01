@@ -24,11 +24,15 @@ In this lesson we are going to explore ways to measure, if categorical variables
 ## Binary Variables
 
 ```yaml
-type: "FullSlide"
-key: "86af209bed"
+type: "TwoColumns"
+key: "f49ee1a91b"
 ```
 
 `@part1`
+- can take on of two possible values
+
+
+`@part2`
 
 
 
