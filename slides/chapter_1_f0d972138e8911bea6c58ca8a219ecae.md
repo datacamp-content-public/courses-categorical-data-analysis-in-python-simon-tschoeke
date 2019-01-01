@@ -45,9 +45,9 @@ Two ways to calculate _**Phi**_
 
 
 `@script`
-Let's first consider binary variables. Binary variables can take only one of two possible values. For example a person can have a certain disease or not. At the same time this person was either exposed to an environmental condition or not. We can check, if these two variables are associated by using the Phi coefficient. Phi can only be used with two binary variables but it's easy to calculate and is similar in its interpretation to the well-known Pearson's r. The value of Phi depends on how the data points are distributed over the two variables. Phi ranges from -1 to +1 if each variable has 50% of the data points. Otherwise the value will be less.
+Let's first consider binary variables. Binary variables can take only one of two possible values. For example a person can have a certain disease or not. At the same time this person was either exposed to a specific environmental condition or not. We can check, if these two variables are associated by using the Phi coefficient. Phi can only be used with two binary variables but it's easy to calculate and is similar in its interpretation to the well-known Pearson's r. Note however, that the value of Phi does not simply range from -1 and +1. Instead it depends on how the data points are distributed over the two variables. Phi ranges from -1 to +1 if each variable has 50% of the data points. Otherwise the value will be less.
 
-Phi can be calculated by either using a 2x2 contingency table or by using the Chi2 statistic. We will focus on the first way since we already know about contigency tables. Chi2 will be introduced in the next chapter.
+Phi can be calculated by either using a 2x2 contingency table or by using the Chi2 statistic. We will focus on the first way, since we already know about contingency tables. Chi2 will be introduced in the next chapter.
 
 
 ---
