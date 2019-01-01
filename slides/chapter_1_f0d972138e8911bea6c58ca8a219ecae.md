@@ -33,7 +33,7 @@ measures correlation between two binary variables
 
 can take one of two possible values
 
-2 ways to calculate **Phi**
+Two ways to calculate **Phi**
 
 1. directly from frequency counts in a 2x2 contingency table
 
@@ -45,9 +45,9 @@ can take one of two possible values
 
 
 `@script`
-Let's first consider binary variables. Binary variables can take only one of two possible values. For example a person can have a certain disease or not. At the same time this person was either exposed to an environmental condition or not. We can check, if these two variables are associated by using the **Phi** coefficient. Phi can only be used if we deal with two binary variables but for a start it's easy to calculate and is similar in it's interpretation as the well-known Pearson's r for relational data.
+Let's first consider binary variables. Binary variables can take only one of two possible values. For example a person can have a certain disease or not. At the same time this person was either exposed to an environmental condition or not. We can check, if these two variables are associated by using the **Phi** coefficient. Phi can only be used with two binary variables but it's easy to calculate and is similar in its interpretation to the well-known Pearson's r. The value of Phi depends on how the data points are distributed over the two variables. Phi ranges from -1 to +1 if 50% of the data belongs to one  
 
-We will be using a 2x2 contingency table to represent categorical, binary variables.
+Phi can be calculated by either using a 2x2 contingency table or by using the Chi2 statistic. We will focus on the first way since we already know about contigency tables. Chi2 will be introduced in the next chapter.
 
 
 ---
