@@ -35,7 +35,7 @@ can take one of two possible values
 
 Two ways to calculate **Phi**
 
-1. directly from frequency counts in a 2x2 contingency table
+1. directly from frequency counts in a **2x2 contingency table**
 
 2. using **Chi2** statistic
 
