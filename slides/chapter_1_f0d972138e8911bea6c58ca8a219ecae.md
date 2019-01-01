@@ -33,7 +33,7 @@ key: "86af209bed"
 
 
 `@script`
-Let's first consider binary variables. Binary variables can take only one of two possible values. For example a person can have a certain disease or not. Here we are interested in analyzing whether two binary variables are associated to each other in any way.
+Let's first consider binary variables. Binary variables can take only one of two possible values. For example a person can have a certain disease or not. At the same time this person was either exposed to an environmental condition or not. Here we are interested in analyzing whether the two binary variables are associated to each other in any way.
 
 
 ---
