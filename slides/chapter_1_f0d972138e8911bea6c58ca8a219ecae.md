@@ -21,7 +21,7 @@ In this lesson we are going to explore ways to measure, if categorical variables
 
 
 ---
-## Binary Variables
+## Phi Coefficient
 
 ```yaml
 type: "TwoColumns"
@@ -29,8 +29,14 @@ key: "f49ee1a91b"
 ```
 
 `@part1`
-- can take one of two possible values
-- represented as 2x2 contingency table
+measures correlation between two binary variables
+can take one of two possible values
+
+2 ways to calculate **Phi**
+
+1. directly from frequency counts in a 2x2 contingency table
+
+2. using **Chi2** statistic
 
 
 `@part2`
@@ -39,25 +45,6 @@ key: "f49ee1a91b"
 
 `@script`
 Let's first consider binary variables. Binary variables can take only one of two possible values. For example a person can have a certain disease or not. At the same time this person was either exposed to an environmental condition or not. We will be using a 2x2 contingency table to represent categorical, binary variables.
-
-
----
-## Phi Coefficient
-
-```yaml
-type: "FullCodeSlide"
-key: "590e98b9ad"
-```
-
-`@part1`
-```python
-import pandas as pd
-import numpy as np
-```
-
-
-`@script`
-One common measure in this context is the **Phi** statistic.
 
 
 ---
