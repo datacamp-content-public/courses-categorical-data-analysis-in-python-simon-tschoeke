@@ -60,7 +60,9 @@ key: "cd989b611a"
 
 `@part1`
 ```python
-def phi(ct):
+import pandas as pd
+
+def phi(ct: pd.DataFrame):
     assert ct.shape == (3,3)
     import math
     a, b, c, d = [ct.iloc[(i,j)] for i in range(2) for j in range(2)]
@@ -72,8 +74,6 @@ def phi(ct):
 
 `@part2`
 ```python
-import pandas as pd
-
 data = pd.read_csv('data.csv', sep=';')
 
 tab = pd.crosstab(data.y, data.yhat, margins=True)
