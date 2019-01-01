@@ -34,7 +34,7 @@ key: "f49ee1a91b"
 
 
 `@part2`
-![](image-url)
+![test](https://assets.datacamp.com/production/repositories/4337/datasets/d97d15b980aa517906ff5d50aefa20400638a05b/2x2contingency.png)
 
 
 `@script`
