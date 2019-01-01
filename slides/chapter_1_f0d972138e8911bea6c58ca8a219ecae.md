@@ -41,7 +41,7 @@ Two ways to calculate _**Phi**_
 
 
 `@part2`
-![2x2](https://assets.datacamp.com/production/repositories/4337/datasets/1288af9eae118213ade073c037614351f3386522/2x2contingency.png)
+![2x2contingency](https://assets.datacamp.com/production/repositories/4337/datasets/4aba9a40e1a6e566ba7da4a4f06b3db124ba9f05/2x2contingency.png)
 
 
 `@script`
