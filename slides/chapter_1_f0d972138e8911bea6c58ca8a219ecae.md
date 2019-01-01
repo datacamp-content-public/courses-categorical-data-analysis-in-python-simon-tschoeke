@@ -89,5 +89,7 @@ key: "3426ee630f"
 ```
 
 `@script`
-We have seen how
+We have seen how 
+
+Phi is also known as Matthews Correlation Coefficient and is used to validate machine learning classifiers.
 
