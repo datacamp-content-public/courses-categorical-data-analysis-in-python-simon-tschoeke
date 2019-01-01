@@ -17,7 +17,7 @@ title: Data Scientist
 
 
 `@script`
-In this lesson we are going to explore ways to measure, if categorical variables are correlated. Many measures of correlation have been developed, each tailored for a specific type of data or use case. Earlier we have learned what a contingency table is and how it can be used to simplify the analysis of categorical data. we will use these tables here again to measure if categorical variables are associated to one another. A word of caution here: if we find that variables are associated to one another we cannot automatically conclude, that one variable causes the other variable to change. In fact the correlation may just be coincidental. This is known as "correlation is not causation".
+In this lesson we are going to explore ways to measure the association between variables. Many measures of correlation have been developed, each tailored for a specific type of data or use case. Earlier we have learned what a contingency table is and how it can be used to simplify the analysis of categorical data. we will use these tables here again to measure if categorical variables are associated to one another. A word of caution here: if we find that variables are associated to one another we cannot automatically conclude, that one variable causes the other variable to change. In fact the correlation may just be coincidental. This is known as "correlation is not causation".
 
 
 ---
