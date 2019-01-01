@@ -17,7 +17,7 @@ title: Data Scientist
 
 
 `@script`
-In previous sessions we have learned what a contingency table is and how to use it for measuring agreement. In this lesson we are going to explore ways to measure if categorical variables are correlated, that is associated in any way.
+In previous sessions we have learned what a contingency table is and how to use it for measuring agreement. In this lesson we are going to explore ways to measure, if categorical variables are correlated. In other words we would like to know, if the variables are associated in any way.
 
 
 ---
