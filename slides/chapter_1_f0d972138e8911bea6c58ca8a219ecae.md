@@ -60,7 +60,19 @@ key: "fdc77ddd5d"
 
 `@part1`
 ```python
+import pandas as pd
 
+# read data
+
+tab = pd.crosstab(data.y, data.yhat, margins=True)
+
+def phi(ct):
+    a, b, c, d = [ct.iloc[(i,j)] for i in range(2) for j in range(2)]
+    NAn = a + b
+    NAp = c + d
+    NBn = a + c
+    NBp = b + d
+    return (a*d - b*c) / math.sqrt(NAn*NAp*NBn*NBp)
 ```
 
 
@@ -69,7 +81,7 @@ key: "fdc77ddd5d"
 
 
 ---
-## Final Slide
+## Leaving Correlation
 
 ```yaml
 type: "FinalSlide"
@@ -77,5 +89,5 @@ key: "3426ee630f"
 ```
 
 `@script`
-
+We have seen how
 
