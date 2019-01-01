@@ -96,7 +96,13 @@ key: "871d4a10ff"
 
 
 `@part2`
+```python
+data = read_csv('data.csv')
 
+tab = pd.crosstab(data.A, data.B, marginals=True)
+
+phi(tab)
+```
 
 
 `@script`
