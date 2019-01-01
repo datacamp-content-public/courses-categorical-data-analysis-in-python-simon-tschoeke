@@ -62,7 +62,7 @@ key: "cd989b611a"
 ```python
 import pandas as pd
 
-def phi(ct: pd.DataFrame):
+def phi(ct: pd.DataFrame) -> float:
     assert ct.shape == (3,3)
     import math
     a, b, c, d = [ct.iloc[(i,j)] for i in range(2) for j in range(2)]
