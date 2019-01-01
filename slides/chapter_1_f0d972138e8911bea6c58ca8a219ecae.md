@@ -60,7 +60,7 @@ center_content: false
 ```
 
 `@part1`
-![Phi method 1](https://assets.datacamp.com/production/repositories/4337/datasets/fcef76ab816a70beaa45ce551dc6a60e7d5a8865/phi1.png)
+![Phi method 1](https://assets.datacamp.com/production/repositories/4337/datasets/8fe219badc022004235fab8e2b063f0fabf2dfec/phi1.png)
 
 
 `@part2`
@@ -78,7 +78,7 @@ def phi(ct: pd.DataFrame) -> float:
 
 
 `@script`
-
+Now, the formula for calculating Phi by directly
 
 
 ---
