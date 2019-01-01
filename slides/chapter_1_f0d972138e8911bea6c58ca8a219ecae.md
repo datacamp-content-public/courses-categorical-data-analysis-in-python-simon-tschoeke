@@ -33,11 +33,11 @@ measures correlation between two binary variables
 
 can take one of two possible values
 
-Two ways to calculate **Phi**
+Two ways to calculate _**Phi**_
 
 1. directly from frequency counts in a **2x2 contingency table**
 
-2. using **Chi2** statistic
+2. using **_Chi2_ statistic**
 
 
 `@part2`
