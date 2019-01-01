@@ -29,11 +29,12 @@ key: "f49ee1a91b"
 ```
 
 `@part1`
-- can take on of two possible values
+- can take one of two possible values
+- represented as 2x2 contingency table
 
 
 `@part2`
-
+![](image-url)
 
 
 `@script`
