@@ -66,9 +66,9 @@ def phi(ct: pd.DataFrame) -> float:
     assert ct.shape == (3,3)
     import math
     a, b, c, d = [ct.iloc[(i,j)] for i in range(2) for j in range(2)]
-    NAn, NAp = [ct.iloc[(i, 2)] for i in range(2)]
-    NBn, NBp = [ct.iloc[(2, i)] for i in range(2)]
-    return (a*d - b*c) / math.sqrt(NAn*NAp*NBn*NBp)
+    NA0, NA1 = [ct.iloc[(i, 2)] for i in range(2)]
+    NB0, NB1 = [ct.iloc[(2, i)] for i in range(2)]
+    return (a*d - b*c) / math.sqrt(NA0*NA1*NB0*NB1)
 ```
 
 
