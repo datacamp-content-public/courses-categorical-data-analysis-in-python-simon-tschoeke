@@ -33,7 +33,7 @@ key: "86af209bed"
 
 
 `@script`
-Let's first consider binary variables. Binary variables can take only one of two possible values. For example a person can have a certain disease or not. At the same time this person was either exposed to an environmental condition or not. We'll be using a 2x2 contingency table to represent categorical, binary variables.
+Let's first consider binary variables. Binary variables can take only one of two possible values. For example a person can have a certain disease or not. At the same time this person was either exposed to an environmental condition or not. We will be using a 2x2 contingency table to represent categorical, binary variables.
 
 
 ---
