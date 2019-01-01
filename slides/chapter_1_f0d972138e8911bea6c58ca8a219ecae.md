@@ -40,7 +40,7 @@ can take one of two possible values
 
 
 `@part2`
-![test](https://assets.datacamp.com/production/repositories/4337/datasets/d97d15b980aa517906ff5d50aefa20400638a05b/2x2contingency.png)
+![test](https://assets.datacamp.com/production/repositories/4337/datasets/1288af9eae118213ade073c037614351f3386522/2x2contingency.png)
 
 
 `@script`
