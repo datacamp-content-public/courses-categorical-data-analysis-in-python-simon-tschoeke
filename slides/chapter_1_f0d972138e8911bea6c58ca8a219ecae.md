@@ -56,9 +56,14 @@ Phi can be calculated by either using a 2x2 contingency table or by using the Ch
 ```yaml
 type: "TwoRows"
 key: "cd989b611a"
+center_content: false
 ```
 
 `@part1`
+![Phi method 1](https://assets.datacamp.com/production/repositories/4337/datasets/fcef76ab816a70beaa45ce551dc6a60e7d5a8865/phi1.png)
+
+
+`@part2`
 ```python
 import pandas as pd
 
@@ -69,16 +74,6 @@ def phi(ct: pd.DataFrame) -> float:
     NA0, NA1 = [ct.iloc[(i, 2)] for i in range(2)]
     NB0, NB1 = [ct.iloc[(2, i)] for i in range(2)]
     return (a*d - b*c) / math.sqrt(NA0*NA1*NB0*NB1)
-```
-
-
-`@part2`
-```python
-data = pd.read_csv('data.csv', sep=';')
-
-tab = pd.crosstab(data.y, data.yhat, margins=True)
-
-phi(tab)
 ```
 
 
