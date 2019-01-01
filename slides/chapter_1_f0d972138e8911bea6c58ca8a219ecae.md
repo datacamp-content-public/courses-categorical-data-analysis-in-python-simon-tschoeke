@@ -30,6 +30,7 @@ key: "f49ee1a91b"
 
 `@part1`
 measures correlation between two binary variables
+
 can take one of two possible values
 
 2 ways to calculate **Phi**
@@ -40,11 +41,13 @@ can take one of two possible values
 
 
 `@part2`
-![test](https://assets.datacamp.com/production/repositories/4337/datasets/1288af9eae118213ade073c037614351f3386522/2x2contingency.png)
+![2x2](https://assets.datacamp.com/production/repositories/4337/datasets/1288af9eae118213ade073c037614351f3386522/2x2contingency.png)
 
 
 `@script`
-Let's first consider binary variables. Binary variables can take only one of two possible values. For example a person can have a certain disease or not. At the same time this person was either exposed to an environmental condition or not. We will be using a 2x2 contingency table to represent categorical, binary variables.
+Let's first consider binary variables. Binary variables can take only one of two possible values. For example a person can have a certain disease or not. At the same time this person was either exposed to an environmental condition or not. We can check, if these two variables are associated by using the **Phi** coefficient. Phi can only be used if we deal with two binary variables but for a start it's easy to calculate and is similar in it's interpretation as the well-known Pearson's r for relational data.
+
+We will be using a 2x2 contingency table to represent categorical, binary variables.
 
 
 ---
