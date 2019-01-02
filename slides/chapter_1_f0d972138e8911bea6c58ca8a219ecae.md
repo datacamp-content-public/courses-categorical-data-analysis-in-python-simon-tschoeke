@@ -78,9 +78,9 @@ def phi(ct: pd.DataFrame) -> float:
 
 
 `@script`
-Now, the formula for calculating Phi using a 2x2 contingency table is show here. It sets the difference of the values found on the diagonals in the table into relation with the marginals. Phi is a symmetric measure, meaning that we can reorder the rows and columns and still get the same result, with the exception of the sign. The analyst has to decide whether reordering columns should be allowed, as the sign may be relevant for the interpretation of the association.
+Now, the formula for calculating Phi using a 2x2 contingency table is shown here. It sets the difference of the values found on the diagonals in the table into relation with the marginals. Phi is a symmetric measure, meaning that we can reorder the rows and columns and still get the same result, with the exception of the sign. The analyst has to decide whether reordering columns should be allowed, as the sign may be relevant for the interpretation of the association.
 
-The code example implements Phi as a function, that takes a 3x3 pandas dataframe representing the 2x2 contingency table with one additional row and column for the marginals. The python code shown here requires python 3.5 onwards as it uses type hints for clarity.
+The code example implements Phi as a function, which takes a 3x3 pandas dataframe representing the 2x2 contingency table with one additional row and column for the marginals. The python code shown here requires python 3.5 onwards as it uses type hints for clarity.
 
 
 ---
