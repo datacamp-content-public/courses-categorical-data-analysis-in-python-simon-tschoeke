@@ -106,7 +106,7 @@ phi(tab)
 
 
 `@script`
-In this example we read in a data file and create the contingency table like we learned in the previous lesson. Finally we call phi.
+In this example we read in a data file and create the contingency table, like we learned in the previous lesson. Finally we call phi.
 
 
 ---
