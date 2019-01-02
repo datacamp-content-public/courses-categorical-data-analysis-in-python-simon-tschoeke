@@ -92,10 +92,6 @@ key: "871d4a10ff"
 ```
 
 `@part1`
-
-
-
-`@part2`
 ```python
 data = read_csv('data.csv')
 
@@ -103,6 +99,10 @@ tab = pd.crosstab(data.A, data.B, marginals=True)
 
 phi(tab)
 ```
+
+
+`@part2`
+
 
 
 `@script`
