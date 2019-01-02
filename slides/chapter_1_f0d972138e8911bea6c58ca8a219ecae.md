@@ -118,9 +118,9 @@ key: "3426ee630f"
 ```
 
 `@script`
-We have seen how to calculate a measure of correlation. There are many more and during your work as analyst or similar role you will have to be conscious about the type of data and select the appropriate measure based on the type and question to be answered with the analysis.
+We have seen how to calculate a measure of correlation. There are many more and during your work as analyst or similar role you will have to be conscious about the type of data and select the appropriate measure based on the type of data and question to be answered.
 
-As a side note: Phi is also a special case of the Matthews Correlation Coefficient which is used to validate machine learning classifiers. Here we are using a confusion matrix which is similar to the contingency table. However, the details are beyond the scope of this course.
+On a side note: Phi is also a special case of the Matthews Correlation Coefficient which is used to validate machine learning classifiers. Here we are using a confusion matrix which is similar to the contingency table. However, the details are beyond the scope of this course.
 
 See you in the next lesson.
 
