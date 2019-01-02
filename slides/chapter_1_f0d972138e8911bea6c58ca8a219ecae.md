@@ -78,9 +78,9 @@ def phi(ct: pd.DataFrame) -> float:
 
 
 `@script`
-Now, the formula for calculating Phi using a 2x2 contingency table is show here. It sets the difference of the values found on the diagonals in the table into relation with the marginals.
+Now, the formula for calculating Phi using a 2x2 contingency table is show here. It sets the difference of the values found on the diagonals in the table into relation with the marginals. Phi is a symmetric measure, meaning that we can reorder the rows and columns and still get the same result, with the exception of the sign. The analyst has to decide whether reordering columns should be allowed, as the sign may be relevant for the interpretation of the association.
 
-The code example implements Phi as a function, that takes a 3x3 pandas dataframe representing the 2x2 contingency table as well as one additional row and column for the marginals.
+The code example implements Phi as a function, that takes a 3x3 pandas dataframe representing the 2x2 contingency table with one additional row and column for the marginals. The python code shown here requires python 3.5 onwards as it uses type hints for clarity.
 
 
 ---
@@ -118,7 +118,9 @@ key: "3426ee630f"
 ```
 
 `@script`
-We have seen how 
+We have seen how to calculate a measure of correlation. There are many more and during your work as analyst or similar role you will have to be conscious about the type of data and select the appropriate measure based on the type and question to be answered with the analysis.
 
-Phi is also known as Matthews Correlation Coefficient and is used to validate machine learning classifiers.
+As a side note: Phi is also a special case of the Matthews Correlation Coefficient which is used to validate machine learning classifiers. Here we are using a confusion matrix which is similar to the contingency table. However, the details are beyond the scope of this course.
+
+See you in the next lesson.
 
