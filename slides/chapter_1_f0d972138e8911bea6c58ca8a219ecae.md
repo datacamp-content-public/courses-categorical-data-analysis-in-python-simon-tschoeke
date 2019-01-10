@@ -21,6 +21,22 @@ In this lesson we are going to explore ways to measure the association between v
 
 
 ---
+## Binary Variables
+
+```yaml
+type: "FullImageSlide"
+key: "191cbd9c58"
+```
+
+`@part1`
+
+
+
+`@script`
+Let's first consider binary variables. Binary variables can take only one of two possible values. For example a person can have a certain disease or not. At the same time this person could have been either exposed to a specific environmental condition or not. For this scenario we would like to know, if having the disease and having been exposed to a specific environment are associated to one another.
+
+
+---
 ## Phi Coefficient
 
 ```yaml
@@ -39,8 +55,6 @@ key: "f49ee1a91b"
 
 
 `@script`
-Let's first consider binary variables. Binary variables can take only one of two possible values. For example a person can have a certain disease or not. At the same time this person could have been either exposed to a specific environmental condition or not. For this scenario we would like to know, if having the disease and having been exposed to a specific environment are associated to one another.
-
 We can do so by using the Phi coefficient. Phi can only be used with two binary variables but it's easy to calculate and is similar in its interpretation to the well-known Pearson's r correlation coefficient.
 
 Phi can be calculated by either by using the Chi2 statistic or by using a 2x2 contingency table. We will focus on the second way, since we already know about contingency tables. Chi2 will be introduced in the next chapter.
@@ -56,7 +70,7 @@ center_content: false
 ```
 
 `@part1`
-![Phi method 1](https://assets.datacamp.com/production/repositories/4337/datasets/8fe219badc022004235fab8e2b063f0fabf2dfec/phi1.png)
+![Phi method 1](https://assets.datacamp.com/production/repositories/4337/datasets/8fe219badc022004235fab8e2b063f0fabf2dfec/phi1.png){{1}}
 
 
 `@part2`
@@ -70,7 +84,7 @@ def phi(ct: pd.DataFrame) -> float:
     NA0, NA1 = [ct.iloc[(i, 2)] for i in range(2)]
     NB0, NB1 = [ct.iloc[(2, i)] for i in range(2)]
     return (a*d - b*c) / math.sqrt(NA0*NA1*NB0*NB1)
-```
+```{{2}}
 
 
 `@script`
@@ -103,6 +117,58 @@ phi(tab)
 
 `@script`
 In this example we read in a data file and create the contingency table, like we learned in the previous lesson. Finally we call phi.
+
+
+---
+## Insert title here...
+
+```yaml
+type: "TwoRowsTwoColumns"
+key: "15180eb040"
+```
+
+`@part1`
+```python
+data = read_csv('data.csv')
+
+tab = pd.crosstab(data.A, data.B, marginals=True)
+
+phi(tab)
+```
+
+
+`@part2`
+```python
+data = read_csv('data.csv')
+
+tab = pd.crosstab(data.A, data.B, marginals=True)
+
+phi(tab)
+```
+
+
+`@part3`
+```python
+data = read_csv('data.csv')
+
+tab = pd.crosstab(data.A, data.B, marginals=True)
+
+phi(tab)
+```
+
+
+`@part4`
+```python
+data = read_csv('data.csv')
+
+tab = pd.crosstab(data.A, data.B, marginals=True)
+
+phi(tab)
+```
+
+
+`@script`
+
 
 
 ---
