@@ -17,7 +17,7 @@ title: Data Scientist
 
 
 `@script`
-In this lesson we are going to explore ways to measure the association between variables. Many measures of correlation have been developed, each tailored for a specific type of data or use case. Earlier we have learned what a contingency table is and how it can be used to simplify the analysis of categorical data. These tables come in handy again now for calculating measures of correlation. A word of caution here: if we find that variables are associated to one another we cannot automatically conclude, that these variables also have a causal relationship, meaning that a change of one variable doesn't cause another variable to change. In fact, the correlation may just be coincidental. This is known as "correlation is not causation".
+In this lesson we are going to explore ways to measure the association between variables. Many measures of correlation have been developed, each tailored for a specific type of data or use case. Earlier we have learned what a contingency table is and how it can be used to simplify the analysis of categorical data. These tables come in handy again now for calculating measures of correlation.
 
 
 ---
@@ -29,25 +29,21 @@ key: "f49ee1a91b"
 ```
 
 `@part1`
-measures correlation between two binary variables
+1. using **_Chi2_ statistic**{{1}}
 
-can take one of two possible values
-
-Two ways to calculate _**Phi**_
-
-1. directly from frequency counts in a **2x2 contingency table**
-
-2. using **_Chi2_ statistic**
+2. directly from frequency counts in a **2x2 contingency table**{{2}}
 
 
 `@part2`
-![2x2contingency](https://assets.datacamp.com/production/repositories/4337/datasets/c6f49e0ac1c5735c4d00d1f4c3c776351c0c7c27/2x2contingency.png)
+![2x2contingency](https://assets.datacamp.com/production/repositories/4337/datasets/c6f49e0ac1c5735c4d00d1f4c3c776351c0c7c27/2x2contingency.png){{2}}
 
 
 `@script`
-Let's first consider binary variables. Binary variables can take only one of two possible values. For example a person can have a certain disease or not. At the same time this person could have been either exposed to a specific environmental condition or not. For this scenario we would like to know, if having the disease and having been exposed to a specific environment are associated to one another. We can do so by using the Phi coefficient. Phi can only be used with two binary variables but it's easy to calculate and is similar in its interpretation to the well-known Pearson's r correlation coefficient. Note however, that the value of Phi does not simply range from -1 to +1 like Pearson's r. Instead, the range depends on how the data points are distributed over the two variables. Phi ranges from -1 to +1 if each variable has 50% of the data points. Otherwise the value will be less.
+Let's first consider binary variables. Binary variables can take only one of two possible values. For example a person can have a certain disease or not. At the same time this person could have been either exposed to a specific environmental condition or not. For this scenario we would like to know, if having the disease and having been exposed to a specific environment are associated to one another.
 
-Phi can be calculated by either using a 2x2 contingency table or by using the Chi2 statistic. We will focus on the first way, since we already know about contingency tables. Chi2 will be introduced in the next chapter.
+We can do so by using the Phi coefficient. Phi can only be used with two binary variables but it's easy to calculate and is similar in its interpretation to the well-known Pearson's r correlation coefficient.
+
+Phi can be calculated by either by using the Chi2 statistic or by using a 2x2 contingency table. We will focus on the second way, since we already know about contingency tables. Chi2 will be introduced in the next chapter.
 
 
 ---
@@ -119,6 +115,8 @@ key: "3426ee630f"
 
 `@script`
 We have seen how to calculate a measure of correlation. There are many more and during your work as analyst or similar role you will have to be conscious about the type of data and select the appropriate measure based on the type of data and question to be answered.
+
+A word of caution here: if we find that variables are associated to one another we cannot automatically conclude, that these variables also have a causal relationship, meaning that a change of one variable doesn't cause another variable to change. In fact, the correlation may just be coincidental. This is known as "correlation is not causation".
 
 On a side note: Phi is also a special case of the Matthews Correlation Coefficient which is used to validate machine learning classifiers. For this we are using a confusion matrix, which is similar to the contingency table. The details are beyond the scope of this course but you can check the implementation in the scikit-learn package sklearn.metrics.
 
