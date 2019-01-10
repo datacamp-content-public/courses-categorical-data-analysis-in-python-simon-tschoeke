@@ -108,34 +108,7 @@ data = read_csv('data.csv')
 tab = pd.crosstab(data.A, data.B, marginals=True)
 
 phi(tab)
-```
-
-
-`@part2`
-
-
-
-`@script`
-In this example we read in a data file and create the contingency table, like we learned in the previous lesson. Finally we call phi.
-
-
----
-## Insert title here...
-
-```yaml
-type: "TwoRowsTwoColumns"
-key: "15180eb040"
-center_content: false
-```
-
-`@part1`
-```python
-data = read_csv('data.csv')
-
-tab = pd.crosstab(data.A, data.B, marginals=True)
-
-phi(tab)
-```
+```{{1}}
 
 
 `@part2`
@@ -145,31 +118,11 @@ data = read_csv('data.csv')
 tab = pd.crosstab(data.A, data.B, marginals=True)
 
 phi(tab)
-```
-
-
-`@part3`
-```python
-data = read_csv('data.csv')
-
-tab = pd.crosstab(data.A, data.B, marginals=True)
-
-phi(tab)
-```
-
-
-`@part4`
-```python
-data = read_csv('data.csv')
-
-tab = pd.crosstab(data.A, data.B, marginals=True)
-
-phi(tab)
-```
+```{{2}}
 
 
 `@script`
-
+Let's look at some examples. For each example we are given a pandas dataframe which already represents the required contigency table.
 
 
 ---
