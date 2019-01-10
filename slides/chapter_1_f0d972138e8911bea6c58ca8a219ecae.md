@@ -125,6 +125,7 @@ In this example we read in a data file and create the contingency table, like we
 ```yaml
 type: "TwoRowsTwoColumns"
 key: "15180eb040"
+center_content: false
 ```
 
 `@part1`
