@@ -103,24 +103,24 @@ key: "871d4a10ff"
 
 `@part1`
 ```python
-tab = pd.Dataframe(data.A, data.B, marginals=True)
-
-phi(tab)
+tab1 = pd.DataFrame(data=[[10, 0, 10], [0, 10, 10], [10, 10, 20]], columns=[0,1,'All'], index=[0,1,'All'])
+tab2 = pd.DataFrame(data=[[0, 10, 10], [10, 0, 10], [10, 10, 20]], columns=[0,1,'All'], index=[0,1,'All'])
+tab3 = pd.DataFrame(data=[[5, 5, 10], [5, 5, 10], [10, 10, 20]], columns=[0,1,'All'], index=[0,1,'All'])
+tab4 = pd.DataFrame(data=[[7, 1, 8], [9, 3, 12], [16, 4, 20]], columns=[0,1,'All'], index=[0,1,'All'])
 ```{{1}}
 
 
 `@part2`
 ```python
-data = read_csv('data.csv')
-
-tab = pd.crosstab(data.A, data.B, marginals=True)
-
-phi(tab)
+phi(tab1)  # 1.0
+phi(tab2)  # -1.0
+phi(tab3)  # 0.0
+phi(tab4)  # 0.15309310892394865
 ```{{2}}
 
 
 `@script`
-Let's look at some examples. For each example we are given a pandas dataframe which already represents the required contigency table.
+Let's look at some examples. First we create a couple of contingency tables simply by calling the pd.DataFrame. The format should look familiar, as it resembles the output from pd.crosstab which we explored earlier. The data argument takes a 2-dimensional array where each sub-array is a line in the table.
 
 
 ---
