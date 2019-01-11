@@ -66,7 +66,7 @@ def phi(ct: pd.DataFrame) -> float:
     import math
     a, b, NA0 = ct.iloc[0,:]
     c, d, NA1 = ct.iloc[1,:]
-    NBn, NBp = ct.iloc[2,:2]
+    NB0, NB1 = ct.iloc[2,:2]
     return (a*d - b*c) / math.sqrt(NA0*NA1*NB0*NB1)
 ```{{2}}
 
