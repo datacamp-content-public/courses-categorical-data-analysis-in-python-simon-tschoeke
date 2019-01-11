@@ -21,22 +21,6 @@ In this lesson we are going to explore ways to measure the association between v
 
 
 ---
-## Binary Variables
-
-```yaml
-type: "FullImageSlide"
-key: "191cbd9c58"
-```
-
-`@part1`
-
-
-
-`@script`
-Let's first consider binary variables. Binary variables can take only one of two possible values. For example a person can have a certain disease or not. At the same time this person could have been either exposed to a specific environmental condition or not. For this scenario we would like to know, if having the disease and having been exposed to a specific environment are associated to one another.
-
-
----
 ## Phi Coefficient
 
 ```yaml
@@ -55,7 +39,7 @@ key: "f49ee1a91b"
 
 
 `@script`
-We can do so by using the Phi coefficient. Phi can only be used with two binary variables but it's easy to calculate and is similar in its interpretation to the well-known Pearson's r correlation coefficient.
+We can do so by using the Phi coefficient for example. Phi can only be used with two binary variables but it's easy to calculate and is similar in its interpretation to the well-known Pearson's r correlation coefficient.
 
 Phi can be calculated by either by using the Chi2 statistic or by using a 2x2 contingency table. We will focus on the second way, since we already know about contingency tables. Chi2 will be introduced in the next chapter.
 
@@ -91,7 +75,7 @@ def phi(ct: pd.DataFrame) -> float:
 Now, the formula for calculating Phi using a 2x2 contingency table is shown here. Phi is a symmetric measure, meaning that we can reorder the rows and columns and still get the same result, with the exception of the sign.
 
 The code example implements Phi as a function, which takes a 3x3 pandas dataframe representing the 2x2 contingency table with one additional row and column for the marginals. The python code shown here requires python 3.5 onwards as it uses type hints for clarity.
-Inside the function we first check that the dataframe has indeed the required 3x3 shape.
+Inside the function we first check that the dataframe has indeed the required 3x3 shape and then proceed to extract the components used in the formula by
 
 
 ---
