@@ -75,7 +75,7 @@ def phi(ct: pd.DataFrame) -> float:
 Now, the formula for calculating Phi using a 2x2 contingency table is shown here. Phi is a symmetric measure, meaning that we can reorder the rows and columns and still get the same result, with the exception of the sign.
 
 The code example implements Phi as a function, which takes a 3x3 pandas dataframe representing the 2x2 contingency table with one additional row and column for the marginals. The python code shown here requires python 3.5 onwards as it uses type hints for clarity.
-Inside the function we first check that the dataframe has indeed the required 3x3 shape and then proceed to extract the components used in the formula. Python's unpacking feature can help here to write readable code. We use iloc to access every line of the dataframe by index, which return a 1-dimensional pandas series. Conveniently a pandas series can be unpacked straight away. Finally we simply calculate Phi as given by the formula above.
+Inside the function we first check that the dataframe has indeed the required 3x3 shape and then proceed to extract the components used in the formula. Python's unpacking feature can help here to write readable code. We use iloc to access every line of the dataframe by index. Since we only access one row at a time iloc returns a 1-dimensional pandas series. Conveniently a pandas series can be unpacked straight away. Finally we simply calculate Phi as given by the formula above.
 
 
 ---
@@ -107,7 +107,7 @@ phi(tab4)  # 0.15309310892394865
 `@script`
 Let's look at some examples. First we create a couple of contingency tables, simply by calling pd.DataFrame and passing 2-dimensional lists to the data argument. The format of the generated dataframes should look familiar, as they resemble the output from pd.crosstab which we explored earlier.
 
-Now it is time to use our function to calculate the Phi coefficient. The first 2 examples illustrate cases for which Phi has its maximum values of +1 and -1 respectively. For the third case 0 is returned, which signifies that no relevant association is present. The last case indicates that there is a slightly positive association between the variables.
+Now it is time to use our function to calculate the Phi coefficient. The first 2 examples illustrate cases for which Phi has its maximum values of +1 and -1 respectively. For those 2 dataframes the values can only be found on one of the diagonals. For the third case 0 is returned, which signifies that no relevant association is present. The last case indicates that there is a slightly positive association between the variables.
 
 
 ---
@@ -119,11 +119,11 @@ key: "3426ee630f"
 ```
 
 `@script`
-We have seen how to calculate a measure of correlation. There are many more and during your work as analyst or similar role you will have to be conscious about the type of data and select the appropriate measure based on the type of data and question to be answered.
+We have seen how to calculate a measure of correlation. There are many more and during your work as analyst or similar role you will have select the appropriate measure based on the type of data and question to be answered.
 
 A word of caution here: if we find that variables are associated to one another we cannot automatically conclude, that these variables also have a causal relationship, meaning that a change of one variable doesn't cause another variable to change. In fact, the correlation may just be coincidental. This is known as "correlation is not causation".
 
-On a side note: Phi is also a special case of the Matthews Correlation Coefficient which is used to validate machine learning classifiers. For this we are using a confusion matrix, which is similar to the contingency table. The details are beyond the scope of this course but you can check the implementation in the scikit-learn package sklearn.metrics.
+On a side note: Phi is a special case of the Matthews Correlation Coefficient which is used to validate machine learning classifiers. The details are beyond the scope of this course but you can check the implementation in the scikit-learn package sklearn.metrics.
 
 See you in the next lesson.
 
