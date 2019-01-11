@@ -105,7 +105,9 @@ phi(tab4)  # 0.15309310892394865
 
 
 `@script`
-Let's look at some examples. First we create a couple of contingency tables simply by calling the pd.DataFrame. The format should look familiar, as it resembles the output from pd.crosstab which we explored earlier. The data argument takes a 2-dimensional array where each sub-array is a line in the table.
+Let's look at some examples. First we create a couple of contingency tables, simply by calling pd.DataFrame and passing 2-dimensional lists to the data argument. The format of the generated dataframes should look familiar, as they resemble the output from pd.crosstab which we explored earlier.
+
+Now it is time to use our function to calculate the Phi coefficient. The first 2 examples illustrate cases for which Phi has its maximum values of +1 and -1 respectively. For the third case 0 is returned, which signifies that no relevant association is present. The last case indicates that there is a slightly positive association between the variables.
 
 
 ---
