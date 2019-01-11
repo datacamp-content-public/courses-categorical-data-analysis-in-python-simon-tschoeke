@@ -80,17 +80,18 @@ import pandas as pd
 def phi(ct: pd.DataFrame) -> float:
     assert ct.shape == (3,3)
     import math
-    a, b, c, d = [ct.iloc[(i,j)] for i in range(2) for j in range(2)]
-    NA0, NA1 = [ct.iloc[(i, 2)] for i in range(2)]
-    NB0, NB1 = [ct.iloc[(2, i)] for i in range(2)]
-    return (a*d - b*c) / math.sqrt(NA0*NA1*NB0*NB1)
+    a, b, c, d = ct.iloc[:2,:2].values.ravel()
+    NAn, NAp, _ = ct.iloc[:,2]
+    NBn, NBp, _ = ct.iloc[2,:]
+    return (a*d - b*c) / math.sqrt(NAn*NAp*NBn*NBp)
 ```{{2}}
 
 
 `@script`
-Now, the formula for calculating Phi using a 2x2 contingency table is shown here. It sets the difference of the values found on the diagonals in the table into relation with the marginals. Phi is a symmetric measure, meaning that we can reorder the rows and columns and still get the same result, with the exception of the sign. The analyst has to decide whether reordering columns should be allowed, as the sign may be relevant for the interpretation of the association.
+Now, the formula for calculating Phi using a 2x2 contingency table is shown here. Phi is a symmetric measure, meaning that we can reorder the rows and columns and still get the same result, with the exception of the sign.
 
 The code example implements Phi as a function, which takes a 3x3 pandas dataframe representing the 2x2 contingency table with one additional row and column for the marginals. The python code shown here requires python 3.5 onwards as it uses type hints for clarity.
+As a good measure we first check that the dataframe has indeed the 3x3 shape.
 
 
 ---
