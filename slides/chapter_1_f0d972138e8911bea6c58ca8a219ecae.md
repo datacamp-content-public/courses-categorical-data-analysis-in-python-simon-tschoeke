@@ -41,7 +41,7 @@ key: "f49ee1a91b"
 `@script`
 We can do so by using the Phi coefficient for example. Phi can only be used with two binary variables but it's easy to calculate and is similar in its interpretation to the well-known Pearson's r correlation coefficient.
 
-Phi can be calculated by either by using the Chi2 statistic or by using a 2x2 contingency table. We will focus on the second way, since we already know about contingency tables. Chi2 will be introduced in the next chapter.
+Phi can be calculated by either using the Chi2 statistic or by using a 2x2 contingency table. We will focus on the second way, since we already know about contingency tables. Chi2 will be introduced in the next chapter.
 
 
 ---
