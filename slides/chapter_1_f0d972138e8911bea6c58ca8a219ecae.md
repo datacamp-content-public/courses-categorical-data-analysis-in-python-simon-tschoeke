@@ -75,7 +75,7 @@ def phi(ct: pd.DataFrame) -> float:
 Now, the formula for calculating Phi using a 2x2 contingency table is shown here. Phi is a symmetric measure, meaning that we can reorder the rows and columns and still get the same result, with the exception of the sign.
 
 The code example implements Phi as a function, which takes a 3x3 pandas dataframe representing the 2x2 contingency table with one additional row and column for the marginals. The python code shown here requires python 3.5 onwards as it uses type hints for clarity.
-Inside the function we first check that the dataframe has indeed the required 3x3 shape and then proceed to extract the components used in the formula by
+Inside the function we first check that the dataframe has indeed the required 3x3 shape and then proceed to extract the components used in the formula. Python's unpacking feature can help here to write readable code. Take note, that for the abcd components we first create a 2x2 slice, which is still a dataframe. Since we need some 1-dimensional container of sorts for unpacking, we use the values attribute to access the underlying 2x2 numpy array and finally call ravel on that array which gives us what we need, a simple 1-dimensional numpy array.
 
 
 ---
