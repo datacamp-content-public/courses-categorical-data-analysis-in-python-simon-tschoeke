@@ -34,7 +34,7 @@ key: "7cb8e6727f"
 - Point-Biserial correlation coefficient{{3}}
 - Spearman's Rho{{4}}
 - Kendall's Tau{{5}}
-- **Phi**{{6}}
+- Phi{{6}}
 
 
 `@script`
