@@ -140,7 +140,7 @@ key: "3426ee630f"
 ```
 
 `@script`
-We have seen how to calculate a measure of correlation. There are many more and during your work as analyst or similar role you will have select the appropriate measure based on the type of data and question to be answered.
+We have seen how to calculate a measure of correlation. There are many more and during your work as analyst or similar role you will have to select the appropriate measure based on the type of data and question to be answered.
 
 A word of caution here: if we find that variables are associated to one another we cannot automatically conclude, that these variables also have a causal relationship, meaning that a change of one variable doesn't cause another variable to change. In fact, the correlation may just be coincidental. This is known as "correlation is not causation".
 
