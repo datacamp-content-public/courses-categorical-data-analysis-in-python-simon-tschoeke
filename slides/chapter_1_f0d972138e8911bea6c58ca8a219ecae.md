@@ -17,7 +17,28 @@ title: Data Scientist
 
 
 `@script`
-Hi and welcome back. In this lesson we are going to explore ways to measure the association between variables. Many measures of correlation have been developed, each tailored for a specific type of data or use case. Earlier we have learned what a contingency table is and how it can be used to simplify the analysis of categorical data. These tables come in handy again now for calculating measures of correlation.
+Hi and welcome back. In this lesson we are going to explore ways to measure the association between variables.
+
+
+---
+## Measures of Correlation
+
+```yaml
+type: "FullSlide"
+key: "7cb8e6727f"
+```
+
+`@part1`
+- Pearson's r{{1}}
+- Cramer's V{{2}}
+- Point-Biserial correlation coefficient{{3}}
+- Spearman's Rho{{4}}
+- Kendall's Tau{{5}}
+- **Phi**{{6}}
+
+
+`@script`
+Many measures of correlation have been developed, each tailored for a specific type of data or use case. Earlier we have learned what a contingency table is and how it can be used to simplify the analysis of categorical data. These tables come in handy again now for calculating measures of correlation.
 
 
 ---
@@ -122,8 +143,6 @@ key: "3426ee630f"
 We have seen how to calculate a measure of correlation. There are many more and during your work as analyst or similar role you will have select the appropriate measure based on the type of data and question to be answered.
 
 A word of caution here: if we find that variables are associated to one another we cannot automatically conclude, that these variables also have a causal relationship, meaning that a change of one variable doesn't cause another variable to change. In fact, the correlation may just be coincidental. This is known as "correlation is not causation".
-
-On a side note: Phi is a special case of the Matthews Correlation Coefficient which is used to validate machine learning classifiers. The details are beyond the scope of this course but you can check the implementation in the scikit-learn package sklearn.metrics.
 
 See you in the next lesson.
 
